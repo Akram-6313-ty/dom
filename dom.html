@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">first</p>
+    <p id="p2">second</p>
+    <p id="p3">third</p>
+    <p id="p4">fourth</p>
+</body>
+<script>
+    let firstP=document.querySelector('p')
+    console.log(firstP);
+    firstP=document.querySelector('#p2')
+    console.log(firstP);
+    firstP= document.querySelectorAll('p')
+    console.log(firstP);
+    for (let i = 0; i < firstP.length; i++) {
+        const element = firstP[i];
+        console.log(element);
+    }
+    
+</script>
+</html>
